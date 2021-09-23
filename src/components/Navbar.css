@@ -1,0 +1,26 @@
+.navbg {
+    background:transparent;
+    height: 40px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    top:0;
+    position: fixed;
+    z-index: 999;
+    color:black !important;
+    transition: all 1.5s;
+    
+    
+    
+
+}
+
+.navbg.active {
+    background: #587760;
+    color: rgb(0, 0, 0) !important;
+    transition: 1.5s
+
+}
+.nav-link{
+    color: white !important;
+}
