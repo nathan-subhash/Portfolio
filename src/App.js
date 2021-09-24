@@ -9,6 +9,7 @@ import Project from './components/Project';
 import Navbar from './components/Navbar';
 import Resume from './Nathan_resume.pdf'
 import {Route, Switch} from 'react-router-dom'
+import Social from './components/Social'
 
 function App(){
 
@@ -34,8 +35,8 @@ function App(){
 
       <div style={{ textAlign: 'center' }}>
         
-          <Route path ='/' component={About} exact/>
-          <Route path ='/project' component={Project} />
+          <Route path ='/' component={About}/>
+          <Route path ='/project' component={Project} exact/>
           {/* <Route path ='/contact' component={Contact} exact/> */}
         
 
@@ -61,7 +62,14 @@ function App(){
               <div style={{ height: 600 }}>
             
                 <div style={{alignContent:'center'}}><h1>About ME</h1>
-                <p>Shit about me</p>
+                <p>I am an enthusiastic,<br/>
+                  talented and hardworking<br/>
+                  individual who aspires to be<br/>
+                  a Full Stack Developer and<br/>
+                  build myself and my<br/>
+                  organization adversely.<br/>
+                  Hire Me: +91 9625917518
+                </p>
                 <a href={Resume} target="_blank">
                 <button type = "button" class="btn btn-outline-success" > Resume</button>
                 </a>
@@ -70,6 +78,16 @@ function App(){
               </div>
           </Parallax>
         </Zoom>
+        
+        <Fade top cascade>
+        <Parallax>
+          <footer>
+            <Social/>
+
+          </footer>
+        </Parallax>
+        </Fade>
+
         
         
 

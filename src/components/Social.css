@@ -1,0 +1,25 @@
+.footer {
+    background: #eee;
+    padding: 25px 50px;
+  }
+
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+
+  a.github {
+    color:black;
+  }
+  
+  a.linkedin {
+    color:rgb(0, 140, 255);
+  }
+  a.instagram {
+    color:rgb(231, 19, 118);
+  }

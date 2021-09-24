@@ -18,9 +18,9 @@ export class Project extends Component {
 
                          <div className='container-fluid' >  
 
-                         <Carousel>  
+                         <Carousel fade black>  
 
-                         <Carousel.Item style={{'height':"700px"}} >  
+                         <Carousel.Item style={{'height':"700px",'backgroundColor':"black", "margin-top":"20px"}} >  
 
                          <img style={{'height':"700px"}}  
 
@@ -36,9 +36,9 @@ export class Project extends Component {
 
                                  </Carousel.Item  >  
 
-                                 <Carousel.Item style={{'height':"700px"}}>  
+                                 <Carousel.Item style={{'height':"700px", 'backgroundColor':"black", "margin-top":"25px", }}>  
 
-                                 <img style={{'height':"700px"}}  
+                                 <img style={{'height':"800px"}}  
 
                                    className="d-block w-100"  
 
@@ -52,7 +52,7 @@ export class Project extends Component {
 
                                          </Carousel.Item>  
 
-                                       <Carousel.Item style={{'height':"700px"}}>  
+                                       <Carousel.Item style={{'height':"700px",'backgroundColor':"black"}}>  
 
                                        <img style={{'height':"700px"}}  
 

@@ -25,10 +25,19 @@ export default function Navbar() {
         letterSpacing:'7px'
 
     }
+    
+    const top = ()=> {
+        document.documentElement.scrollTop = 0;
+
+
+        
+    }
     let name;
-    if (navbar){
+    if (navbar || window.location.href.indexOf("/project") > -1){
         name = <div style={inLineStyle}> 
-        <p>Nathan Subhash</p>
+         
+        <p onClick={top} style={{cursor:"pointer"}}>Nathan Subhash</p>
+        
 
     </div>
     }else{
@@ -58,7 +67,7 @@ export default function Navbar() {
     return (
         <div style={{display:'flex'}}>
 
-            <div className={navbar ? 'navbg active ' : 'navbg '} >
+            <div className={navbar || window.location.href.indexOf("/project") > -1 ? 'navbg active ' : 'navbg '} >
                 {/* {(()=> {
                     if(navbar===true){
                         return (
